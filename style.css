@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hamburger{
+  display: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  background-color: rgb(48 86 211);
+  position: relative;
+  transition: all 0.5s ease-in-out ;
+}
+
+header .logo {
+  color: white;
+}
+header ul {
+  display: flex;
+  transition: all 0.5s ease-in-out ;
+}
+header ul li {
+  list-style: none;
+  margin-left: 2rem;
+}
+header ul li > a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+header ul li > a:hover {
+  opacity: 0.5;
+}
+
+header section {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  align-items: center;
+}
+
+header section .left-side {
+  width: 40%;
+  color: rgb(48 86 211);
+  padding: 2rem;
+}
+header section .left-side h1 {
+  margin: 2rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+header section .left-side p {
+  font-weight: bold;
+  opacity: 0.8;
+  line-height: 1.5rem;
+}
+header section .right-side {
+  width: 60%;
+  padding: 2rem 5rem;
+}
+header section .right-side img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100% 0% 88% 12% / 0% 100% 0% 100%;
+  border: 3px solid rgb(48 86 211);
+}
+.about-us-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 2rem 15%;
+  gap: 1rem;
+  background-color: white;
+  padding: 2rem 1rem;
+  border: 1px solid rgb(208, 208, 208);
+}
+.about-us .about-us-title {
+  padding: 5px 10px;
+  background-color: rgb(48 86 211);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.about-us .about-us-text {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  color: #111d;
+}
+.about-us .first-paragraph,
+.second-paragraph {
+  width: 70%;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: gray;
+  line-height: 2rem;
+}
+
+.internships {
+  width: fit-content;
+}
+.internships .text {
+  margin: 2rem 15%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: start;
+  gap: 1rem;
+}
+.internships .text .internship-title {
+  padding: 5px 10px;
+  background-color: rgb(48 86 211);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+}
+
+.internships .text .internship-text {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  color: #111d;
+}
+.internships .text .internship-paragraph {
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: gray;
+  line-height: 2rem;
+}
+.internships .programs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem 10%;
+  gap: 5px;
+}
+
+.internships .programs .item {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid rgb(119, 146, 234);
+  padding: 2rem;
+  width: 350px;
+  text-align: center;
+  border-radius: 10px;
+}
+.internships .programs .item .title {
+  font-size: 1.5rem;
+  color: rgb(85, 117, 220);
+  font-weight: bold;
+}
+
+.internships .programs .item .categories {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  padding: 2rem 0;
+  color: rgb(48 86 211);
+}
+
+.internships .programs .item button {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background-color: #fff;
+  color: rgb(48 86 211);
+  border: 1px solid rgb(48 86 211);
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.2s linear ease-in-out;
+}
+
+.internships .programs .item button:hover {
+  background-color: rgb(48 86 211);
+  color: #fff;
+  border: 1px solid rgb(48 86 211);
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  background-color: rgb(250, 250, 250);
+}
+.faq .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq .heading .title {
+  width: fit-content;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: rgb(48 86 211);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.faq .heading .text {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  color: #111d;
+}
+
+.faq .question-answer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.faq .question-answer .item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+  width: 40%;
+}
+
+.faq .question-answer .item .question {
+  font-size: 1.5rem;
+}
+.faq .question-answer .item .answer {
+  color: rgb(119, 146, 234);
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(228, 226, 226);
+}
+
+.contact-us .left-side,
+.contact-us .right-side {
+  width: 50%;
+}
+
+.contact-us .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+}
+.contact-us .left-side .title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgb(119, 146, 234);
+}
+.contact-us .left-side .text {
+  text-align: left;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.694);
+}
+
+.form-mb-5 {
+  margin-bottom: 20px;
+}
+.form-pt-3 {
+  padding-top: 12px;
+}
+.form-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.form-form-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.form-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #07074d;
+  margin-bottom: 12px;
+}
+.form-form-label-2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-form-input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+.form-form-input:focus {
+  border-color: #6a64f1;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 14px 32px;
+  border: none;
+  font-weight: 600;
+  background-color: #fff;
+  color: rgb(48 86 211);
+  cursor: pointer;
+  border: 1px solid gray;
+}
+.form-btn:hover {
+  background-color: rgb(48 86 211);
+  color: #fff;
+  border: 1px solid rgb(48 86 211);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.form-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.w-full {
+  width: 100%;
+}
+@media (min-width: 540px) {
+  .sm\:w-half {
+    width: 50%;
+  }
+}
+
+footer {
+  background-color: #07074d;
+  padding: 2rem;
+  color: #fff;
+}
+
+footer .main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#divider {
+  margin: 1rem 0;
+  border: 1px solid white;
+  outline: none;
+}
+
+footer .sub-footer,
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-x {
+  font-size: 1.5rem;
+}
+footer .sub-footer a,
+footer .main-footer .social-media a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .sub-footer a:hover,
+footer .main-footer .social-media a:hover {
+  text-decoration: underline;
+  opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+  .faq .question-answer .item {
+    width: 90%;
+  }
+  .contact-us {
+    flex-direction: column;
+    .left-side, .right-side{
+      width: 100%;
+    }
+  }
+  .hero-section{
+    flex-direction: column;
+    .left-side, .right-side{
+      width: 100%;
+    }
+  }
+  .internships .text {
+    align-items: center;
+  }
+  
+}
+.display{
+  display: block;
+}
+
+@media (max-width: 750px){
+  header{
+    margin-top: 20%;
+  }
+  .hamburger{
+    display: block;
+  }
+  header nav{
+    position: fixed;
+    z-index: 50;
+    padding: 1rem;
+  }
+  header nav ul{
+    position: absolute;
+    left: 0;
+    top:100%;
+    flex-direction: column;
+    background-color: rgb(48 86 211);
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 2rem 0;
+    display: none;
+  }
+} 
+
+@media (min-width: 750px){
+  .hamburger{
+    display: none;
+  }
+  header ul {
+    flex-direction: row;
+  }
+}
